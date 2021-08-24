@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.baizhi.dao.StudentDao">
+    <!--void save(Student student);-->
+    <insert id="save" parameterType="student">
+        insert into t_student(id,name,age,bir,salary) values(#{id},#{name},#{age},#{bir},#{salary})
+    </insert>
+    <!--List<Student> selectAll();-->
+    <select id="selectAll" resultType="student">
+        select id,name,age,bir,salary from t_student
+    </select>
+
+
+</mapper>
