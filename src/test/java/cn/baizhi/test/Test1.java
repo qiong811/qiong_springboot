@@ -21,6 +21,7 @@ public class Test1 extends BaseTest{
     @Test
     public void save(){
         ss.save(new Student(null, "jj", 20, new Date(), 13000.0));
+        System.out.println("1");
     }
 
 }
